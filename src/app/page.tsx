@@ -10,8 +10,8 @@ export default function Home() {
     <Box>
       <Hero />
       <About />
-      <ContactForm />
       <HowItWorks />
+      <ContactForm />
     </Box>
   );
 }
