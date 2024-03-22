@@ -12,13 +12,28 @@ function Hero() {
         className="hero__content"
         // sx={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
       >
-        <Typography variant="h1" fontSize={50} fontWeight={700}>
+        <Typography
+          variant="h1"
+          fontSize={50}
+          fontWeight={700}
+          className="hero__text--primary"
+        >
           Aman Behavioral Therapy
         </Typography>
-        <Typography variant="h3" my={2} fontSize={30} fontWeight={600}>
+        <Typography
+          variant="h3"
+          my={2}
+          fontSize={30}
+          fontWeight={600}
+          className="hero__text--secondary"
+        >
           Creating quality of life outcomes that last
         </Typography>
-        <Typography variant="body1" fontSize={18}>
+        <Typography
+          variant="body1"
+          fontSize={18}
+          className="hero__text--paragraph"
+        >
           Positive Behavior Supports Corporation embraces a specific approach to
           delivery of applied behavior analysis (ABA) therapy: Positive behavior
           support (PBS) which is a research-based approach to supporting people
