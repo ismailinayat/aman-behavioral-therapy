@@ -39,7 +39,7 @@ function ContactForm() {
             <div className="book__form">
               <div className="form__title">
                 <h2>Get in Touch with Aman Behavioral Therapy</h2>
-                <h4>It's easy. Just fill the form below.</h4>
+                <h4>Its easy. Just fill the form below.</h4>
               </div>
               <form className="form">
                 <div className="form__group">
