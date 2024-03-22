@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-white);
+}
+
+.section {
+  max-width: var(--grid-width);
+  margin: 5rem auto;
+  padding: 0 10rem;
+
+  @include respond(tab-port) {
+    padding: 0 3rem;
+  }
+}

@@ -7,8 +7,11 @@ function Hero() {
   return (
     <Box className="hero__container">
       <Navbar></Navbar>
-      <Image className="hero__image" src="/hero.jpg" fill alt="hero image" />
-      <Box className="hero__content">
+
+      <Box
+        className="hero__content"
+        // sx={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
+      >
         <Typography variant="h1" fontSize={50} fontWeight={700}>
           Aman Behavioral Therapy
         </Typography>
@@ -28,7 +31,7 @@ function Hero() {
           size="large"
           sx={{
             borderRadius: "50px",
-            marginTop: 2,
+            marginTop: 4,
             fontSize: 16,
             width: "200px",
             backgroundColor: "primary.main",

@@ -1,6 +1,7 @@
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import ApartmentIcon from "@mui/icons-material/Apartment";
+import SectionHeading from "../SectionHeading";
 
 function ContactForm() {
   // const sendEmail = (e) => {
@@ -30,8 +31,10 @@ function ContactForm() {
   return (
     <div id="contact">
       {/* <ToastContainer></ToastContainer> */}
+
       <section className="section-book">
         <div className="row">
+          <SectionHeading text="Contact Us" />
           <div className="book">
             <div className="book__form">
               <div className="form__title">

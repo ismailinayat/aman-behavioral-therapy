@@ -1,12 +1,14 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import SectionHeading from "../SectionHeading";
 
 const About = () => {
   return (
-    <Box className="about__container" padding="100px 50px">
-      <Grid container spacing={8}>
-        <Grid item xs={12} md={6}>
+    <Box className="about__container" padding="0 50px">
+      <SectionHeading text="About Us" />
+      <Grid container gap={8} justifyContent="space-between">
+        <Grid item xs={12} md={5.5}>
           <Typography variant="body1" fontSize={22} marginBottom={3}>
             Aman Behavioral Therapy is an agency committed to the principles of
             Positive Behavior Support (an approach based on principles of
@@ -26,7 +28,7 @@ const About = () => {
             today to speak with one of our professional team members.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={5.5}>
           <Stack
             direction="row"
             spacing={4}

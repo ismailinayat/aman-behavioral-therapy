@@ -2,6 +2,7 @@ import About from "@/components/about/About";
 import Contact from "@/components/contact/Contact";
 import ContactForm from "@/components/contact/ContactForm";
 import Hero from "@/components/hero/hero";
+import HowItWorks from "@/components/how-it-works/HowItWorks";
 import { Box } from "@mui/material";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <ContactForm />
-      {/* <Contact /> */}
+      <HowItWorks />
     </Box>
   );
 }
