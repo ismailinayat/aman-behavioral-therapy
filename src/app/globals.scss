@@ -1,6 +1,8 @@
 @import "./styles/variables.scss";
 @import "./styles/mixins.scss";
 @import "./styles/base.scss";
+@import "./styles/animations.scss";
+
 @import "./styles/section-heading.scss";
 @import "./styles/navbar.scss";
 @import "./styles/howitworks.scss";
@@ -26,6 +28,7 @@
     align-items: center;
     position: relative;
     margin-top: 5rem;
+    animation: moveInBottom 1s ease-out;
 
     @include respond(tab-port) {
       margin-top: 6rem;

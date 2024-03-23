@@ -27,18 +27,18 @@ function Hero() {
           fontWeight={600}
           className="hero__text--secondary"
         >
-          Creating quality of life outcomes that last
+          Building lifelong resilience through compassionate care
         </Typography>
         <Typography
           variant="body1"
           fontSize={18}
           className="hero__text--paragraph"
         >
-          Positive Behavior Supports Corporation embraces a specific approach to
-          delivery of applied behavior analysis (ABA) therapy: Positive behavior
-          support (PBS) which is a research-based approach to supporting people
-          of all ages with behavioral challenges in home, school, and community
-          settings.
+          Positive Behavior Supports Corporation adopts a specialized method in
+          administering applied behavior analysis (ABA) therapy known as
+          Positive Behavior Support (PBS). This evidence-based approach is
+          dedicated to assisting individuals of various ages who face behavioral
+          difficulties across home, school, and community environments.
         </Typography>
 
         <Button

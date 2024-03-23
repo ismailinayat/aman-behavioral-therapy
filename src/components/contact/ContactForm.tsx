@@ -32,7 +32,7 @@ function ContactForm() {
     <div id="contact">
       {/* <ToastContainer></ToastContainer> */}
 
-      <section className="section-book">
+      <section className="section">
         <div className="row">
           <SectionHeading text="Contact Us" />
           <div className="book">
@@ -95,9 +95,9 @@ function ContactForm() {
               <div className="contact__info">
                 <div className="heading">
                   <h3>Contact Information</h3>
-                  <p>
+                  {/* <p>
                     You can contact us on the following contact information.
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className="info__container">
@@ -108,8 +108,6 @@ function ContactForm() {
 
                     <div className="phone__number">
                       <p className="number__1">+1-111-1111111</p>
-
-                      <p className="number__2">+1-222-2222222</p>
                     </div>
                   </div>
 
@@ -119,7 +117,7 @@ function ContactForm() {
                     </div>
 
                     <div className="email__mail">
-                      <p>ismailinayat@gmail.com</p>
+                      <p>contact@amanaba.com</p>
                     </div>
                   </div>
 

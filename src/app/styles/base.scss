@@ -14,10 +14,11 @@ body {
 
 .section {
   max-width: var(--grid-width);
-  margin: 5rem auto;
-  padding: 0 10rem;
+  margin: 10rem auto;
+  padding: var(--section-padding-desktop);
+  color: var(--color-black);
 
   @include respond(tab-port) {
-    padding: 0 3rem;
+    padding: var(--section-padding-tabport);
   }
 }

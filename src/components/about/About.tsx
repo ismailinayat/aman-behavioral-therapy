@@ -1,111 +1,144 @@
+"use client";
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SectionHeading from "../SectionHeading";
+import AnimatedDiv from "../AnimatedContainer";
 
 const About = () => {
+  // const [isVisible, setIsVisible] = useState(false);
+  // const elementRef = useRef(null);
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         setIsVisible(true);
+  //         observer.unobserve(entry.target);
+  //       }
+  //     });
+  //   });
+
+  //   if (elementRef.current) {
+  //     observer.observe(elementRef.current);
+  //   }
+
+  //   return () => {
+  //     if (elementRef.current) {
+  //       observer.unobserve(elementRef.current);
+  //     }
+  //   };
+  // }, []);
+
   return (
-    <Box className="about__container" padding="0 50px">
+    <div className="section">
       <SectionHeading text="About Us" />
       <Grid container gap={8} justifyContent="space-between">
         <Grid item xs={12} md={5.5}>
           <Typography variant="body1" fontSize={22} marginBottom={3}>
-            Aman Behavioral Therapy is an agency committed to the principles of
-            Positive Behavior Support (an approach based on principles of
-            applied behavior analysis, ABA) to improve not only behavior, but
-            also quality of life for the individuals we serve, their families,
-            and others who support them.
+            Aman Behavioral Therapy is a dedicated agency that upholds the
+            principles of Positive Behavior Support (PBS), an approach grounded
+            in the principles of applied behavior analysis (ABA). Our mission is
+            to enhance not just behavior, but also the overall quality of life
+            for the individuals under our care, as well as their families and
+            support networks.
           </Typography>
 
           <Typography variant="subtitle1" fontSize={18} lineHeight={"26px"}>
-            After an autism diagnosis, Positive Behavior Supports Corporation is
-            here to help walk your family through the next steps. We provide
-            individualized ABA Therapy for those with autism and related
-            disabilities, children and adults, to assist with decreasing
-            challenging behaviors and increasing appropriate behaviors and skill
-            deficits that will allow the individual to reach their full
-            potential. We accept nearly all major insurance companies. Call
-            today to speak with one of our professional team members.
+            Following an autism diagnosis, Positive Behavior Supports
+            Corporation stands ready to guide your family through the next
+            stages. We offer personalized ABA Therapy tailored to individuals
+            with autism and related disabilities, spanning children to adults.
+            Our aim is to reduce challenging behaviors while enhancing
+            appropriate behaviors and addressing skill deficits, empowering
+            individuals to achieve their utmost potential. We accept a wide
+            range of major insurance providers. Reach out today to connect with
+            one of our experienced team members.
           </Typography>
         </Grid>
         <Grid item xs={12} md={5.5}>
-          <Stack
-            direction="row"
-            spacing={4}
-            marginBottom={8}
-            maxWidth={"600px"}
-          >
-            <Box>
-              <Image
-                src="/icons/about-1.png"
-                width={50}
-                height={50}
-                alt="hand icon"
-              ></Image>
-            </Box>
-            <Box>
-              <Typography
-                variant="h3"
-                fontSize={19}
-                lineHeight={"24px"}
-                fontWeight={700}
-              >
-                Providing ABA Therapy in home, school, and community settings
-              </Typography>
-            </Box>
-          </Stack>
-
-          <Stack
-            direction="row"
-            spacing={4}
-            marginBottom={8}
-            maxWidth={"600px"}
-          >
-            <Box>
-              <Image
-                src="/icons/about-2.png"
-                width={50}
-                height={50}
-                alt="hand icon"
-              ></Image>
-            </Box>
-            <Box>
-              <Typography
-                variant="h3"
-                fontSize={19}
-                lineHeight={"24px"}
-                fontWeight={700}
-              >
-                Supporting families Regionally across the United States and
-                Canada
-              </Typography>
-            </Box>
-          </Stack>
-
-          <Stack direction="row" spacing={4} maxWidth={"600px"}>
-            <Box>
-              <Image
-                src="/icons/about-3.png"
-                width={50}
-                height={50}
-                alt="hand icon"
-              ></Image>
-            </Box>
-            <Box>
-              <Typography
-                variant="h3"
-                fontSize={19}
-                lineHeight={"24px"}
-                fontWeight={700}
-              >
-                Accepting a variety of funding sources including a major health
-                care providers
-              </Typography>
-            </Box>
-          </Stack>
+          <AnimatedDiv>
+            <Stack
+              direction="row"
+              spacing={4}
+              marginBottom={8}
+              maxWidth={"600px"}
+            >
+              <Box>
+                <Image
+                  src="/icons/about-1.png"
+                  width={50}
+                  height={50}
+                  alt="hand icon"
+                ></Image>
+              </Box>
+              <Box>
+                <Typography
+                  variant="h3"
+                  fontSize={19}
+                  lineHeight={"24px"}
+                  fontWeight={700}
+                >
+                  Delivering ABA Therapy across home, school, and community
+                  environments.
+                </Typography>
+              </Box>
+            </Stack>
+          </AnimatedDiv>
+          <AnimatedDiv>
+            <Stack
+              direction="row"
+              spacing={4}
+              marginBottom={8}
+              maxWidth={"600px"}
+            >
+              <Box>
+                <Image
+                  src="/icons/about-2.png"
+                  width={50}
+                  height={50}
+                  alt="hand icon"
+                ></Image>
+              </Box>
+              <Box>
+                <Typography
+                  variant="h3"
+                  fontSize={19}
+                  lineHeight={"24px"}
+                  fontWeight={700}
+                >
+                  Extending support to families nationwide in the United States
+                  and Canada.
+                </Typography>
+              </Box>
+            </Stack>
+          </AnimatedDiv>
+          <AnimatedDiv>
+            <Stack direction="row" spacing={4} maxWidth={"600px"}>
+              <Box>
+                <Image
+                  src="/icons/about-3.png"
+                  width={50}
+                  height={50}
+                  alt="hand icon"
+                ></Image>
+              </Box>
+              <Box>
+                <Typography
+                  variant="h3"
+                  fontSize={19}
+                  lineHeight={"24px"}
+                  fontWeight={700}
+                >
+                  Accepting various funding sources, including major healthcare
+                  providers.
+                </Typography>
+              </Box>
+            </Stack>
+          </AnimatedDiv>
         </Grid>
       </Grid>
-    </Box>
+    </div>
   );
 };
 
