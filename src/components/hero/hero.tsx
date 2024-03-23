@@ -1,11 +1,23 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import Navbar from "../layout/navbar";
-import Image from "next/image";
 
-function Hero() {
+function Hero({ image }: { image: string }) {
   return (
-    <Box className="hero__container">
+    <Box
+      className="hero__container"
+      sx={{
+        backgroundImage: `linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(/${image}.webp)`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <Navbar></Navbar>
 
       <Box
@@ -34,11 +46,11 @@ function Hero() {
           fontSize={18}
           className="hero__text--paragraph"
         >
-          Positive Behavior Supports Corporation adopts a specialized method in
-          administering applied behavior analysis (ABA) therapy known as
-          Positive Behavior Support (PBS). This evidence-based approach is
-          dedicated to assisting individuals of various ages who face behavioral
-          difficulties across home, school, and community environments.
+          At Aman Behavioral Therapy, we are dedicated to fostering lifelong
+          resilience through compassionate care. Our specialized method in
+          providing applied behavior analysis (ABA) therapy, is evidence-based
+          and tailored to help individuals of all ages overcome behavioral
+          challenges in their homes, schools, and communities
         </Typography>
 
         <Button

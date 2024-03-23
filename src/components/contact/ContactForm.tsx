@@ -16,7 +16,7 @@ export async function POST(
   try {
     const data = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>",
-      to: ["Contact@amanaba.com"],
+      to: ["contact@amanaba.com"],
       subject: "Query From Website",
       react: QueryEmail({ userName, email: userEmail, message: userMessage }),
     });

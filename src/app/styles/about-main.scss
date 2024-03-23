@@ -1,0 +1,49 @@
+.about__page {
+  .about__description {
+    padding: 3rem 10rem;
+    margin-bottom: 5rem;
+
+    @include respond(phone) {
+      padding: 1rem;
+    }
+    p {
+      font-size: 1.9rem;
+      text-align: center;
+    }
+  }
+
+  .about__mission {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    .mission__section {
+      background-color: #f2f7fb;
+      padding: 5rem;
+      flex: 1;
+
+      @include respond(phone) {
+        padding: 5rem 2rem;
+      }
+      .about__heading {
+        h3 {
+          font-size: 3rem;
+          font-weight: 700;
+          text-align: center;
+        }
+        margin-bottom: 3rem;
+      }
+    }
+
+    .mission__para {
+      font-size: 1.6rem;
+      line-height: 28px;
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
