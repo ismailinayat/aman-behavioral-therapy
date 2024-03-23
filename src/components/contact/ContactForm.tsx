@@ -2,32 +2,31 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import SectionHeading from "../SectionHeading";
+import { Resend } from "resend";
+import { QueryEmail } from "../Email";
+import Form from "./Form";
+const resend: any = new Resend(process.env.NEXT_PUBLIC_RESEND);
 
+export async function POST(
+  userName: string,
+  userEmail: string,
+  userMessage: string
+) {
+  "use server";
+  try {
+    const data = await resend.emails.send({
+      from: "Acme <onboarding@resend.dev>",
+      to: ["ismailinayat@gmail.com"],
+      subject: "Query From Website",
+      react: QueryEmail({ userName, email: userEmail, message: userMessage }),
+    });
+    console.log(data);
+    return "success";
+  } catch (error) {
+    return "error";
+  }
+}
 function ContactForm() {
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   e.target[3].innerText = 'Sending ...'
-  //   e.target[3].style.backgroundColor = 'grey'
-
-  //   emailjs.sendForm(
-  //       "service_qqj5iq9",
-  //       "template_5t041ed",
-  //       e.target,
-  //       "user_KGITFgaKwgk0uI96i7oZm"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         e.target[3].innerText = 'Send Email';
-  //         e.target[3].style.backgroundColor = '#EA3A60'
-  //         toast.success("Email Sent!");
-  //         e.target.reset();
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
-
   return (
     <div id="contact">
       {/* <ToastContainer></ToastContainer> */}
@@ -41,54 +40,7 @@ function ContactForm() {
                 <h2>Get in Touch with Aman Behavioral Therapy</h2>
                 <h4>Its easy. Just fill the form below.</h4>
               </div>
-              <form className="form">
-                <div className="form__group">
-                  <input
-                    type="text"
-                    className="form__input"
-                    id="name"
-                    placeholder="Full Name"
-                    name="Name"
-                    required
-                  />
-                  <label htmlFor="name" className="form__label">
-                    Full Name
-                  </label>
-                </div>
-
-                <div className="form__group">
-                  <input
-                    type="email"
-                    className="form__input"
-                    id="email"
-                    placeholder="Email address"
-                    required
-                    name="Email"
-                  />
-                  <label htmlFor="email" className="form__label">
-                    Email address
-                  </label>
-                </div>
-
-                <div className="form__group">
-                  <textarea
-                    // type="text"
-                    className="form__input"
-                    id="message"
-                    rows={4}
-                    placeholder="Write your message"
-                    required
-                    name="Message"
-                  />
-                  <label htmlFor="message" className="form__label">
-                    Write your message
-                  </label>
-                </div>
-
-                <button className="btn btn--green u-margin-top-medium">
-                  Send Email
-                </button>
-              </form>
+              <Form post={POST}></Form>
             </div>
 
             <div className="contact">
