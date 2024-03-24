@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -16,29 +17,19 @@ function Footer() {
           <div className="footer__navigation">
             <ul className="footer__list">
               <li className="footer__list-item">
-                <a href="#" className="footer__link">
+                <Link href="/" className="footer__link">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="footer__list-item">
-                <a href="#" className="footer__link">
+                <Link href="/about" className="footer__link">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="footer__list-item">
-                <a href="#" className="footer__link">
+                <Link href="/contact" className="footer__link">
                   Contact Us
-                </a>
-              </li>
-              <li className="footer__list-item">
-                <a href="#" className="footer__link">
-                  Privacy Policy
-                </a>
-              </li>
-              <li className="footer__list-item">
-                <a href="#" className="footer__link">
-                  Terms
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

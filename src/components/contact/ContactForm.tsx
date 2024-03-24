@@ -29,8 +29,6 @@ export async function POST(
 function ContactForm() {
   return (
     <div id="contact">
-      {/* <ToastContainer></ToastContainer> */}
-
       <section className="section">
         <div className="row">
           <SectionHeading text="Contact Us" />

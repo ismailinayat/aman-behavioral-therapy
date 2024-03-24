@@ -1,0 +1,88 @@
+.contact-page-form {
+  // padding: 0 1rem;
+  color: var(--color-black);
+  &__group {
+    margin-bottom: 5rem;
+  }
+
+  &__input {
+    color: inherit;
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1.4rem 2rem;
+    border: none;
+    //background-color: $color-light-grey-1;
+    border-radius: 2px;
+    border-bottom: 3px solid $color-grey-dark-2;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(black, 0.15);
+      border-bottom: 3px solid $color-green-dark;
+
+      &:invalid {
+        border-bottom: 3px solid $color-primary;
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      color: black;
+    }
+
+    &:placeholder-shown + .form__label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem);
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    font-weight: 700;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  .btn {
+    outline: none;
+    padding: 1.5rem 1.6rem;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: var(--color-primary);
+    color: $color-white;
+    position: relative;
+
+    .email__loader {
+      position: absolute;
+      height: 3rem;
+      width: 3rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+    }
+  }
+}

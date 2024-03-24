@@ -1,0 +1,40 @@
+.banners {
+  display: flex;
+  gap: 2rem;
+  max-width: var(--grid-width);
+  margin: 10rem auto;
+  padding: 0 1rem;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+  .contact__banner {
+    flex: 1;
+    background-color: var(--color-tertiary);
+    padding: 3rem 2.5rem;
+    color: var(--color-white);
+    border-radius: 1rem;
+    .title {
+      display: flex;
+      gap: 1rem;
+      &__icon {
+        svg {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+
+      &__text {
+        h3 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .info {
+      margin-top: 2rem;
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

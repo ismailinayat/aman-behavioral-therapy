@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 function Navbar() {
@@ -12,25 +13,27 @@ function Navbar() {
       ></div>
       <nav className="nav__container">
         <div className="logo">
-          <Image
-            src="/logo-transparent.png"
-            width={200}
-            height={120}
-            alt="logo"
-          />
+          <Link href="/">
+            <Image
+              src="/logo-transparent.png"
+              width={200}
+              height={120}
+              alt="logo"
+            />
+          </Link>
         </div>
 
         <ul className={active ? "nav-links nav-active" : "nav-links"}>
           <li className={active ? "link link-active" : "link"}>
-            <a href="#">Home</a>
+            <Link href="/">Home</Link>
           </li>
 
           <li className={active ? "link link-active" : "link"}>
-            <a href="#">About</a>
+            <Link href="/about">About</Link>
           </li>
 
           <li className={active ? "link link-active" : "link"}>
-            <a href="#">Contact Us</a>
+            <Link href="/contact">Contact Us</Link>
           </li>
         </ul>
 

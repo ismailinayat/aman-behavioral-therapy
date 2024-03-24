@@ -1,0 +1,28 @@
+.contact__container {
+  display: flex;
+  max-width: var(--grid-width);
+  margin: 0 auto;
+  .contact__image {
+    width: 49%;
+
+    line-height: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  .contact__form {
+    width: 49%;
+    padding: 2rem;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
