@@ -36,7 +36,7 @@ function ContactForm() {
             <div className="book__form">
               <div className="form__title">
                 <h2>
-                  We're here to help. Whether you have questions, need more
+                  We are here to help. Whether you have questions, need more
                   information, or are ready to start the journey with Aman
                   Behavioral Agency, we invite you to reach out to us. Our team
                   is dedicated to providing the support and guidance you need.
