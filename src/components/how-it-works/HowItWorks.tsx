@@ -7,31 +7,31 @@ import AnimatedDiv from "../AnimatedContainer";
 const HowItWorks = () => {
   return (
     <div className="section">
-      <SectionHeading text="How it works" />
+      <SectionHeading text="Our Approach" />
       <AnimatedDiv>
         <div className="works__content">
           <Step
             number="1"
-            title="Initiate ABA Therapy Request Submission:"
-            detail="Essential demographic and medical details are gathered."
+            title="Individualized Care"
+            detail="Every individual is unique, and so are their needs. We begin with a comprehensive assessment to understand the specific challenges and strengths, based on which we develop a personalized treatment plan."
           />
 
           <Step
             number="2"
-            title="A team member of ABT will connect with you:"
-            detail="Our team will respond within 2 business days to provide a status update on your ABA Therapy request."
+            title="Evidence-Based Methods"
+            detail="Our services incorporate the latest research and techniques in Applied Behavior Analysis (ABA), ensuring effective and efficient treatment outcomes."
           />
 
           <Step
             number="3"
-            title="The Authorization Process Begins:"
-            detail="ABT clinical team will work to secure an initial assessment authorization for ABA Therapy through the funding source provided."
+            title="Family and Community Engagement"
+            detail="We believe in the power of collaboration. Our programs include parent training, school consultation, and community integration support to foster a supportive environment for our clients."
           />
 
           <Step
             number="4"
-            title="Your first visit with a team ABT clinician begins:"
-            detail="A behavior analyst will work with you and your loved one to conduct an assessment to address behaviors of concern and collaborate with you to create a behavior intervention plan for on-going ABA Therapy."
+            title="Growth and Learning"
+            detail="Discover the difference at Aman Behavioral Agency, where we turn challenges into opportunities for growth and learning."
           />
         </div>
       </AnimatedDiv>

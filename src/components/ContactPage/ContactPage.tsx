@@ -26,19 +26,19 @@ const ContactPage = () => {
           <ContactBanner
             titleText="Call Us"
             TitleIcon={LocalPhoneIcon}
-            bannerInfo="1 (234) 567-891"
+            bannerInfo="(669) 261-2600"
           />
 
-          <ContactBanner
+          {/* <ContactBanner
             titleText="Location"
             TitleIcon={FmdGoodIcon}
             bannerInfo="121 Rock Sreet, 21 Avenue, New York, NY 92103-9000"
-          />
+          /> */}
 
           <ContactBanner
             titleText="Hours"
             TitleIcon={QueryBuilderIcon}
-            bannerInfo="Mon to Fri …… 11 am to 8 pm, Sat, Sun  …… 6 am to 8 pm"
+            bannerInfo="Mon to Fri …… 9:00 am to 5:00 pm, Sat …… By appointment, Sun …… Closed"
           />
         </div>
       </div>

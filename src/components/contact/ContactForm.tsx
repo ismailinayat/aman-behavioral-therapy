@@ -35,8 +35,13 @@ function ContactForm() {
           <div className="book">
             <div className="book__form">
               <div className="form__title">
-                <h2>Get in Touch with Aman Behavioral Therapy</h2>
-                <h4>Its easy. Just fill the form below.</h4>
+                <h2>
+                  We're here to help. Whether you have questions, need more
+                  information, or are ready to start the journey with Aman
+                  Behavioral Agency, we invite you to reach out to us. Our team
+                  is dedicated to providing the support and guidance you need.
+                </h2>
+                {/* <h4>Its easy. Just fill the form below.</h4> */}
               </div>
               <Form post={POST}></Form>
             </div>
@@ -57,7 +62,7 @@ function ContactForm() {
                     </div>
 
                     <div className="phone__number">
-                      <p className="number__1">+1-111-1111111</p>
+                      <p className="number__1">(669) 261-2600</p>
                     </div>
                   </div>
 
@@ -71,7 +76,7 @@ function ContactForm() {
                     </div>
                   </div>
 
-                  <div className="info address">
+                  {/* <div className="info address">
                     <div className="icon address__icon">
                       <ApartmentIcon></ApartmentIcon>
                     </div>
@@ -79,7 +84,7 @@ function ContactForm() {
                     <div className="address__address">
                       <p>Lorem ipsum dolor sit amet.</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

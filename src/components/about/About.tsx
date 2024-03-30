@@ -32,19 +32,22 @@ const About = () => {
 
   return (
     <div className="section">
-      <SectionHeading text="About Us" />
+      <SectionHeading text="Welcome to Aman Behavioral Agency" />
       <Grid container gap={8} justifyContent="space-between">
         <Grid item xs={12} md={5.5}>
           <Typography variant="body1" fontSize={22} marginBottom={3}>
-            Aman Behavioral Therapy is a dedicated agency that upholds the
-            principles of Positive Behavior Support (PBS), an approach grounded
-            in the principles of applied behavior analysis (ABA). Our mission is
-            to enhance not just behavior, but also the overall quality of life
-            for the individuals under our care, as well as their families and
-            support networks.
+            At Aman Behavioral Agency, we are committed to providing exceptional
+            care and comprehensive support to individuals with behavioral
+            challenges. Our dedicated team of professionals uses evidence-based
+            practices to offer a range of services tailored to meet the unique
+            needs of each client. We believe in empowering individuals and their
+            families through education, skill development, and ongoing support
+            to achieve meaningful and lasting changes. Explore our services to
+            find out how we can help you or your loved one navigate the path to
+            improved behavior and enhanced quality of life.
           </Typography>
 
-          <Typography variant="subtitle1" fontSize={18} lineHeight={"26px"}>
+          {/* <Typography variant="subtitle1" fontSize={18} lineHeight={"26px"}>
             Following an autism diagnosis, Positive Behavior Supports
             Corporation stands ready to guide your family through the next
             stages. We offer personalized ABA Therapy tailored to individuals
@@ -54,7 +57,7 @@ const About = () => {
             individuals to achieve their utmost potential. We accept a wide
             range of major insurance providers. Reach out today to connect with
             one of our experienced team members.
-          </Typography>
+          </Typography> */}
         </Grid>
         <Grid item xs={12} md={5.5}>
           <AnimatedDiv>

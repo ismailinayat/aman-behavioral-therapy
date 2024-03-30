@@ -11,7 +11,9 @@
 @import "./styles/contact-page-form.scss";
 @import "./styles/contact-page.scss";
 @import "./styles/contact-banner.scss";
-
+@import "./styles/services.scss";
+@import "./styles//card.scss";
+@import "./styles/btn-text.scss";
 .hero__container {
   min-height: 85vh;
   .hero__content {
@@ -89,6 +91,42 @@
   }
 }
 
+.description__text {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  font-size: 1.8rem;
+  // margin: 3rem 0;
+  // padding: 3rem 0;
+  // padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: var(--line);
+  border-bottom: var(--line);
+
+  &__items {
+    flex: 0 0 100%;
+    margin-bottom: 1.5rem;
+    text-indent: -2.5rem;
+    margin-left: 2.5rem;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: 0.7rem;
+      background-color: var(--color-secondary);
+      transform: translateY(0.2rem);
+
+      -webkit-mask-image: url(chevron-thin-right.svg);
+      -webkit-mask-size: cover;
+    }
+  }
+}
 @import "./styles/about.scss";
 @import "./styles/contact.scss";
 @import "./styles/footer.scss";

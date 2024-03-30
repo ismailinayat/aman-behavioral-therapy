@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import Navbar from "../layout/navbar";
+import Link from "next/link";
 
 function Hero({ image }: { image: string }) {
   return (
@@ -53,21 +54,23 @@ function Hero({ image }: { image: string }) {
           challenges in their homes, schools, and communities
         </Typography>
 
-        <Button
-          variant="contained"
-          size="large"
-          sx={{
-            borderRadius: "50px",
-            marginTop: 4,
-            fontSize: 16,
-            width: "200px",
-            backgroundColor: "primary.main",
-            color: "white",
-            textTransform: "none",
-          }}
-        >
-          Get In Touch
-        </Button>
+        <Link href="/contact">
+          <Button
+            variant="contained"
+            size="large"
+            sx={{
+              borderRadius: "50px",
+              marginTop: 4,
+              fontSize: 16,
+              width: "200px",
+              backgroundColor: "primary.main",
+              color: "white",
+              textTransform: "none",
+            }}
+          >
+            Get In Touch
+          </Button>
+        </Link>
       </Box>
     </Box>
   );

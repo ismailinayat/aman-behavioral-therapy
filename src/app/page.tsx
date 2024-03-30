@@ -5,6 +5,10 @@ import HowItWorks from "@/components/how-it-works/HowItWorks";
 import Team from "@/components/out-team/OurTeam";
 import { Box } from "@mui/material";
 
+const data = {
+  heroTitle: "Welcome to Aman Behavioral Agency",
+  heroDescription: "",
+};
 export default function Home() {
   return (
     <Box>

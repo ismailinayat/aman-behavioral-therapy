@@ -1,0 +1,36 @@
+.service__detail {
+  p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  margin-bottom: 4rem;
+}
+
+.services__container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service__info {
+  .feature__columns {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+
+    padding: 0 3rem;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    .service__features {
+      flex: 1;
+      .feature__heading {
+        h3 {
+          font-size: 2.2rem;
+        }
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

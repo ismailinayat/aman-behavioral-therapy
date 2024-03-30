@@ -29,7 +29,11 @@ function Navbar() {
           </li>
 
           <li className={active ? "link link-active" : "link"}>
-            <Link href="/about">About</Link>
+            <Link href="/services">Our Services</Link>
+          </li>
+
+          <li className={active ? "link link-active" : "link"}>
+            <Link href="/about">About Us</Link>
           </li>
 
           <li className={active ? "link link-active" : "link"}>
