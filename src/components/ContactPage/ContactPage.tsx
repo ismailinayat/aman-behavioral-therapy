@@ -35,11 +35,7 @@ const ContactPage = () => {
             bannerInfo="121 Rock Sreet, 21 Avenue, New York, NY 92103-9000"
           /> */}
 
-          <ContactBanner
-            titleText="Hours"
-            TitleIcon={QueryBuilderIcon}
-            bannerInfo="Mon to Fri …… 9:00 am to 5:00 pm, Sat …… By appointment, Sun …… Closed"
-          />
+          <ContactBanner titleText="Hours" TitleIcon={QueryBuilderIcon} />
         </div>
       </div>
     </>

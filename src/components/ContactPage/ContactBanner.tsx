@@ -8,7 +8,7 @@ const ContactBanner = ({
 }: {
   TitleIcon: any;
   titleText: string;
-  bannerInfo: string;
+  bannerInfo?: string;
 }) => {
   return (
     <div className="contact__banner">
@@ -21,9 +21,26 @@ const ContactBanner = ({
         </div>
       </div>
 
-      <div className="info">
-        <p>{bannerInfo}</p>
-      </div>
+      {bannerInfo ? (
+        <div className="info">
+          <p>{bannerInfo}</p>
+        </div>
+      ) : (
+        <div className="info">
+          <div className="info__inner">
+            <p>Mon to Fri:</p>
+            <p>09:00AM - 06:00PM</p>
+          </div>
+          <div className="info__inner">
+            <p>Saturday:</p>
+            <p>09:00AM - 04:00PM</p>
+          </div>
+          <div className="info__inner">
+            <p>Sunday:</p>
+            <p>09:00AM - 02:00PM</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

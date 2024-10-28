@@ -10,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Aman Behavioral Theraphy",
-  description: "Aman Behavioral Theraphy",
+  title: "Aman Behavioral Therapy",
+  description: "Aman Behavioral Therapy",
 };
 
 export default function RootLayout({

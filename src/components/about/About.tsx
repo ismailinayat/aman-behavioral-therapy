@@ -110,8 +110,8 @@ const About = () => {
                   lineHeight={"24px"}
                   fontWeight={700}
                 >
-                  Extending support to families nationwide in the United States
-                  and Canada.
+                  Providing extensive support to families in Northern
+                  California.
                 </Typography>
               </Box>
             </Stack>
