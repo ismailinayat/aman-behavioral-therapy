@@ -3,7 +3,17 @@ import React from "react";
 import Navbar from "../layout/navbar";
 import Link from "next/link";
 
-function Hero({ image }: { image: string }) {
+function Hero({
+  image,
+  title,
+  subTitle,
+  description,
+}: {
+  image: string;
+  title: string;
+  subTitle: string;
+  description: string;
+}) {
   return (
     <Box
       className="hero__container"
@@ -31,7 +41,7 @@ function Hero({ image }: { image: string }) {
           fontWeight={700}
           className="hero__text--primary"
         >
-          Aman Behavioral Therapy
+          {title}
         </Typography>
         <Typography
           variant="h3"
@@ -40,18 +50,14 @@ function Hero({ image }: { image: string }) {
           fontWeight={600}
           className="hero__text--secondary"
         >
-          Building lifelong resilience through compassionate care
+          {subTitle}
         </Typography>
         <Typography
           variant="body1"
           fontSize={18}
           className="hero__text--paragraph"
         >
-          At Aman Behavioral Therapy, we are dedicated to fostering lifelong
-          resilience through compassionate care. Our specialized method in
-          providing applied behavior analysis (ABA) therapy, is evidence-based
-          and tailored to help individuals of all ages overcome behavioral
-          challenges in their homes, schools, and communities
+          {description}
         </Typography>
 
         <Link href="/contact">

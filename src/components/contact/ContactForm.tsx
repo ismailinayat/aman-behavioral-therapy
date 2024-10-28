@@ -26,21 +26,22 @@ export async function POST(
     return "error";
   }
 }
-function ContactForm() {
+function ContactForm({
+  title,
+  paragraph,
+}: {
+  title: string;
+  paragraph: string;
+}) {
   return (
     <div id="contact">
       <section className="section">
         <div className="row">
-          <SectionHeading text="Contact Us" />
+          <SectionHeading text={title} />
           <div className="book">
             <div className="book__form">
               <div className="form__title">
-                <h2>
-                  We are here to help. Whether you have questions, need more
-                  information, or are ready to start the journey with Aman
-                  Behavioral Agency, we invite you to reach out to us. Our team
-                  is dedicated to providing the support and guidance you need.
-                </h2>
+                <h2>{paragraph}</h2>
                 {/* <h4>Its easy. Just fill the form below.</h4> */}
               </div>
               <Form post={POST}></Form>

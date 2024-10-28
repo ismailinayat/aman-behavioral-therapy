@@ -4,10 +4,11 @@ const AboutMain = () => {
       <div className="about__page">
         <div className="about__description">
           <p>
-            We use the principles of Applied Behavior Analysis to conduct
-            quality assessments and behavioral intervention plans. PBS is
-            committed to producing outcomes that improve an individual’s skills
-            and quality of life.
+            At Aman Behavioral Agency, we apply the principles of Applied
+            Behavior Analysis (ABA) to deliver high-quality assessments and
+            intervention plans that improve skills and enhance quality of life.
+            Our commitment is to create lasting, positive outcomes for
+            individuals, families, and communities.
           </p>
         </div>
 
@@ -18,31 +19,32 @@ const AboutMain = () => {
             </div>
 
             <p className="mission__para">
-              Create a responsive system that applies the principles of PBS to
-              meet the needs of individuals, families and organizations we serve
-              to produce quality of life changes that last
+              To build a responsive system that uses ABA principles to address
+              the needs of individuals, families, and organizations, fostering
+              meaningful, long-term improvements in quality of life.
             </p>
 
             <p className="mission__para">
-              Develop an organization that attracts the most competent,
-              enthusiastic people and turns them into proficient professionals
+              To develop a team-oriented organization that attracts passionate,
+              skilled professionals and helps them grow into highly proficient
+              experts in the field.
             </p>
           </div>
 
           <div className="mission__section">
             <div className="about__heading">
-              <h3>Why ABT?</h3>
+              <h3>Why Choose Aman Behavioral Agency?</h3>
             </div>
 
             <div className="mission__para">
-              We are different. Our vision is two-fold, focused both on the
-              clients and families we serve and on the staff we work with and
-              invest in developing. We are outcome driven and provide a
-              multi-level tier of clinical support. We are not just looking for
-              behavior analysts and technicians, but are searching for the best
-              of each. If you want to work with a team who supports their staff,
-              offers opportunities for professional development and growth, and
-              focuses on our families first, PBS is for you!
+              We stand apart by focusing on both the clients and families we
+              serve and the staff we support. Our approach is outcome-driven,
+              offering a multi-tiered system of clinical support. At Aman
+              Behavioral Agency, we are not just looking for behavior analysts
+              and technicians—we seek the best talent in each role. If you want
+              to join a team that values professional development, fosters
+              growth, and places families first, Aman Behavioral Agency is the
+              place for you!
             </div>
           </div>
         </div>

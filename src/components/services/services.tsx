@@ -5,43 +5,43 @@ import SectionDescription from "../section-description";
 import ServiceCard from "./ServiceCard";
 
 const desc =
-  "At Aman Behavioral Agency, we are dedicated to providing a comprehensive array of services tailored to meet the unique needs of each individual and their families. We understand the importance of a comfortable and familiar environment for the effectiveness of behavioral therapy. Therefore, we are proud to offer in-home therapy services for our programs, bringing personalized support directly to your doorstep.";
+  "At Aman Behavioral Agency, we offer a wide range of services designed to meet the unique needs of individuals and their families. We recognize the importance of comfort and familiarity in effective behavioral therapy, which is why we proudly provide in-home therapy services, bringing personalized care directly to you.";
 
 const services = [
   {
     title: "Assessments and Evaluations",
     description:
-      "Including initial behavioral assessments, Functional Behavior Assessments (FBA), and development of individualized treatment plans.",
+      "We conduct comprehensive assessments, including initial behavioral assessments, Functional Behavior Assessments (FBA), and the creation of individualized treatment plans.",
   },
 
   {
     title: "ABA Therapy Programs",
     description:
-      "Tailored interventions including Early Intensive Behavioral Intervention (EIBI), Focused ABA, Behavior Reduction Programs, and more.",
+      "We offer tailored interventions such as Early Intensive Behavioral Intervention (EIBI), Focused ABA, behavior reduction programs, and more.",
   },
 
   {
     title: "Skill Development",
     description:
-      "Focusing on social skills, adaptive skills for daily living, and complex skills development through task analysis and chaining.",
+      "Our programs emphasize the development of social skills, adaptive skills for daily living, and complex skill-building using task analysis and chaining techniques.",
   },
 
   {
     title: "Support Services",
     description:
-      "Including IEP consultation, coordination with healthcare providers, and advocacy for community integration.",
+      "We provide services like IEP consultation, coordination with healthcare providers, and advocacy for successful community integration.",
   },
 
   {
     title: "Therapeutic Approaches",
     description:
-      "Such as Verbal Behavior Intervention (VBI), Pivotal Response Training (PRT), Discrete Trial Training (DTT), and Natural Environment Training (NET).",
+      "Our therapeutic techniques include Verbal Behavior Intervention (VBI), Pivotal Response Training (PRT), Discrete Trial Training (DTT), and Natural Environment Training (NET).",
   },
 
   {
     title: "Training and Development",
     description:
-      "Offering professional development for therapists, workshops for families, and community awareness initiatives.",
+      "We offer professional development for therapists, family workshops, and initiatives to raise community awareness.",
   },
 ];
 const Services = () => {
@@ -53,7 +53,7 @@ const Services = () => {
         <h3
           style={{ marginTop: "20px", marginBottom: "20px", fontSize: "20px" }}
         >
-          Our suite of services includes:
+          Our services includes:
         </h3>
       </div>
       <div className="services__container">
