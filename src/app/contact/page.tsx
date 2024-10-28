@@ -4,10 +4,10 @@ import { Box } from "@mui/material";
 
 export default function Home() {
   const data = {
-    heroTitle: "Aman Behavioral Therapy",
+    heroTitle: "Aman Behavioral Agency",
     heroSubTitle: "Building lifelong resilience through compassionate care",
     heroDescription:
-      "At Aman Behavioral Therapy, we are dedicated to fostering lifelong resilience through compassionate care. Our specialized method in providing applied behavior analysis (ABA) therapy, is evidence-based and tailored to help individuals of all ages overcome behavioral challenges in their homes, schools, and communities",
+      "At Aman Behavioral Agency, we are dedicated to fostering lifelong resilience through compassionate care. Our specialized method in providing applied behavior analysis (ABA) therapy, is evidence-based and tailored to help individuals of all ages overcome behavioral challenges in their homes, schools, and communities",
   };
 
   const contactData = {
